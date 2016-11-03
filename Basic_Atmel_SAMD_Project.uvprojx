@@ -425,6 +425,13 @@
         </Group>
         <Group>
           <GroupName>Low_Level_Drivers</GroupName>
+          <Files>
+            <File>
+              <FileName>gclk.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\gclk.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>::CMSIS</GroupName>
@@ -437,6 +444,21 @@
   </Targets>
 
   <RTE>
+    <packages>
+      <filter>
+        <targetInfos/>
+      </filter>
+      <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="4.5.0">
+        <targetInfos>
+          <targetInfo name="SAMD20J18" versionMatchMode="fixed"/>
+        </targetInfos>
+      </package>
+      <package name="SAMD20_DFP" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="Keil" version="1.1.0">
+        <targetInfos>
+          <targetInfo name="SAMD20J18" versionMatchMode="fixed"/>
+        </targetInfos>
+      </package>
+    </packages>
     <apis/>
     <components>
       <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="4.3.0" condition="Cortex-M Device">

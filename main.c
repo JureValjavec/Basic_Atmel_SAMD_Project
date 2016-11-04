@@ -1,5 +1,10 @@
-#include "SAMD20.h"
-#include "main.h"
+/*****************************************************************************/
+/* Author: Jure Valjavec                                                     */	
+/* Date: 04.11.2016                                                          */
+/* File: main.c                                                              */
+/*****************************************************************************/
+
+#include "config.h"
 
 /*Dodan komentar za test*/
 int main (void)
@@ -7,6 +12,6 @@ int main (void)
 	
 	while (1)
 	{
-	
+		
 	}
 }
